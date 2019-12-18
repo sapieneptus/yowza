@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'yowza' do
+  pod 'HockeySDK', '5.1.4'
+end
