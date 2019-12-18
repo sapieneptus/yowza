@@ -10,8 +10,8 @@
 		74418D66686166B3666CF14F /* Pods_yowza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DFC7909063F5DBCC291816 /* Pods_yowza.framework */; };
 		89BF7E6223A91BE200D3A3C2 /* SDKDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF7E6123A91BE200D3A3C2 /* SDKDetailsViewController.swift */; };
 		89BF7E6423A91CFD00D3A3C2 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF7E6323A91CFD00D3A3C2 /* Config.swift */; };
+		89BF7E6623AA404100D3A3C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF7E6523AA404100D3A3C2 /* SceneDelegate.swift */; };
 		89F6FAFE23A8E65600B21D95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F6FAFD23A8E65600B21D95 /* AppDelegate.swift */; };
-		89F6FB0023A8E65600B21D95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F6FAFF23A8E65600B21D95 /* SceneDelegate.swift */; };
 		89F6FB0223A8E65600B21D95 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F6FB0123A8E65600B21D95 /* ConfigViewController.swift */; };
 		89F6FB0523A8E65600B21D95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F6FB0323A8E65600B21D95 /* Main.storyboard */; };
 		89F6FB0723A8E65900B21D95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F6FB0623A8E65900B21D95 /* Assets.xcassets */; };
@@ -22,9 +22,9 @@
 		036C2EFD242F2EB429889B26 /* Pods-yowza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yowza.release.xcconfig"; path = "Pods/Target Support Files/Pods-yowza/Pods-yowza.release.xcconfig"; sourceTree = "<group>"; };
 		89BF7E6123A91BE200D3A3C2 /* SDKDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKDetailsViewController.swift; sourceTree = "<group>"; };
 		89BF7E6323A91CFD00D3A3C2 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		89BF7E6523AA404100D3A3C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		89F6FAFA23A8E65600B21D95 /* yowza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yowza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F6FAFD23A8E65600B21D95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89F6FAFF23A8E65600B21D95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		89F6FB0123A8E65600B21D95 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		89F6FB0423A8E65600B21D95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89F6FB0623A8E65900B21D95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,8 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				89F6FAFD23A8E65600B21D95 /* AppDelegate.swift */,
-				89F6FAFF23A8E65600B21D95 /* SceneDelegate.swift */,
 				89F6FB0123A8E65600B21D95 /* ConfigViewController.swift */,
+				89BF7E6523AA404100D3A3C2 /* SceneDelegate.swift */,
 				89F6FB0323A8E65600B21D95 /* Main.storyboard */,
 				89F6FB0623A8E65900B21D95 /* Assets.xcassets */,
 				89F6FB0823A8E65900B21D95 /* LaunchScreen.storyboard */,
@@ -217,11 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89BF7E6623AA404100D3A3C2 /* SceneDelegate.swift in Sources */,
 				89BF7E6223A91BE200D3A3C2 /* SDKDetailsViewController.swift in Sources */,
 				89F6FB0223A8E65600B21D95 /* ConfigViewController.swift in Sources */,
 				89BF7E6423A91CFD00D3A3C2 /* Config.swift in Sources */,
 				89F6FAFE23A8E65600B21D95 /* AppDelegate.swift in Sources */,
-				89F6FB0023A8E65600B21D95 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
