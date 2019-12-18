@@ -55,7 +55,9 @@ class SDKDetailsViewController: UIViewController {
         if config.authType == .hockeyAppEmail {
             BITHockeyManager.shared().authenticator.authenticationSecret = appSecret
         }
+
         BITHockeyManager.shared().serverURL = config.environment.rawValue
+        BITHockeyManager.shared().authenticator.modalPresentationStyle = .fullScreen
         BITHockeyManager.shared().authenticator.serverURL = config.environment.rawValue
         BITHockeyManager.shared().authenticator.webpageURL = URL(string: config.environment.rawValue)
         BITHockeyManager.shared().authenticator.restrictApplicationUsage = config.restrictApplicationUsage
