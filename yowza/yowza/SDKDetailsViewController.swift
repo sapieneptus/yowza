@@ -60,6 +60,7 @@ class SDKDetailsViewController: UIViewController {
         BITHockeyManager.shared().authenticator.webpageURL = URL(string: config.environment.rawValue)
         BITHockeyManager.shared().authenticator.restrictApplicationUsage = config.restrictApplicationUsage
         BITHockeyManager.shared().authenticator.authenticateInstallation()
+        BITHockeyManager.shared().authenticator.restrictionEnforcementFrequency = .onAppActive
         
         BITHockeyManager.shared().start()
     }
