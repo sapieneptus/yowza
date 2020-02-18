@@ -13,8 +13,6 @@ class ConfigViewController: UIViewController {
     static let AuthTypes: [BITAuthenticatorIdentificationType] = [.anonymous, .hockeyAppUser, .hockeyAppEmail, .device, .webAuth]
     static let Environments: [Config.Environment] = [.Training, .Rink]
     
-    let authTypeChanged: Bool = false
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.versionLabel.text = Config.appVersion()
