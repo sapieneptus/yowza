@@ -12,7 +12,7 @@ class SDKDetailsViewController: UIViewController {
 
         versionLabel.text = Config.appVersion()
 
-        let config = Config.fetch()!
+        let config = Config.fetch()
 
         let authTypeString: String
         switch config.authType {
@@ -44,16 +44,14 @@ class SDKDetailsViewController: UIViewController {
     }
 
     func initializeSDK() {
-        let config = Config.fetch()!
-        let appId = config.environment == .Training ? "962886f78bde4a239c1eca7cbf708b04" : "2973215e74ff440fbc08dd30b454acdc"
-        let appSecret = config.environment == .Training ? "a80d7081b243a4a6e28618ea7faff504" : "fbfc7eb40dd8d6cbade2f063d081761d"
+        let config = Config.fetch()
 
-        BITHockeyManager.shared().configure(withIdentifier: appId)
+        BITHockeyManager.shared().configure(withIdentifier: config.appId)
         BITHockeyManager.shared().logLevel = BITLogLevel.verbose
 
         BITHockeyManager.shared().authenticator.identificationType = config.authType
         if config.authType == .hockeyAppEmail {
-            BITHockeyManager.shared().authenticator.authenticationSecret = appSecret
+            BITHockeyManager.shared().authenticator.authenticationSecret = config.appSecret
         }
 
         BITHockeyManager.shared().serverURL = config.environment.rawValue
