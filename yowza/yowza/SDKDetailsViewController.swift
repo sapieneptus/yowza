@@ -43,6 +43,10 @@ class SDKDetailsViewController: UIViewController {
         initializeSDK()
     }
 
+    @IBAction func crashButtonTapped(_ sender: UIButton) {
+        BITHockeyManager.shared().crashManager.generateTestCrash()
+    }
+    
     func initializeSDK() {
         let config = Config.fetch()
 

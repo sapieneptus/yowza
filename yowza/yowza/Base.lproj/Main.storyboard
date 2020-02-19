@@ -182,6 +182,14 @@
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpM-r9-aba">
+                                <rect key="frame" x="160" y="285" width="94" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Crash 💥"/>
+                                <connections>
+                                    <action selector="crashButtonTapped:" destination="QM0-eO-cLo" eventType="touchUpInside" id="gOT-zv-pqb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -192,6 +200,8 @@
                             <constraint firstItem="ovj-Ee-iMP" firstAttribute="leading" secondItem="hIy-6P-wMW" secondAttribute="leading" constant="20" id="SSZ-F2-ID5"/>
                             <constraint firstItem="9H5-69-scD" firstAttribute="top" secondItem="ovj-Ee-iMP" secondAttribute="bottom" constant="8" id="Tlv-qH-uch"/>
                             <constraint firstItem="hIy-6P-wMW" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ovj-Ee-iMP" secondAttribute="trailing" symbolic="YES" id="l6R-TC-8Jm"/>
+                            <constraint firstItem="GpM-r9-aba" firstAttribute="centerX" secondItem="hIy-6P-wMW" secondAttribute="centerX" id="lBd-4G-VHQ"/>
+                            <constraint firstItem="GpM-r9-aba" firstAttribute="top" secondItem="9H5-69-scD" secondAttribute="bottom" constant="20" id="lyl-Ja-R9z"/>
                             <constraint firstItem="9H5-69-scD" firstAttribute="leading" secondItem="hIy-6P-wMW" secondAttribute="leading" constant="20" id="pT4-0C-Jxi"/>
                             <constraint firstItem="hIy-6P-wMW" firstAttribute="bottom" secondItem="9H5-69-scD" secondAttribute="bottom" constant="451" id="sTC-Cm-ogz"/>
                             <constraint firstItem="ovj-Ee-iMP" firstAttribute="top" secondItem="IKX-e3-7le" secondAttribute="bottom" constant="8" id="xz0-uA-gkY"/>
